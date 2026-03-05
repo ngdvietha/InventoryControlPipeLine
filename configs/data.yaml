@@ -1,0 +1,20 @@
+# M5 Forecasting Data Configuration
+
+m5:
+  id_cols:
+    - id
+    - item_id
+    - dept_id
+    - cat_id
+    - store_id
+    - state_id
+  join_key_calendar: d
+  calendar_cols:
+    - wm_yr_wk
+    - date
+  join_key_price: 
+    - wm_yr_wk
+    - store_id
+    - item_id
+  price_cols:
+    - sell_price
